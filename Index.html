@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<main>
+			<div class="page-wrapper">
+				<div class="form-container">
+					<label class="your-tasks" for="inputField"><h2>Your Tasks</h2></label>
+					<div class="inputButton">
+						<div style="flex: 3">
+							<input type="text" id="inputField" name="inputField" placeholder="task name" required />
+						</div>
+						<div style="flex: 1">
+							<button id="add-btn" type="submit">Add</button>
+						</div>
+					</div>
+					<div class="validation-message">There Was An Error</div>
+				</div>
+				<div id="tasks-list" class="tasks-wrapper"></div>
+
+				<br />
+				<div class="button-row">
+					<button id="erase-btn">Clean list</button>
+				</div>
+			</div>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>
